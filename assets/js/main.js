@@ -41,3 +41,12 @@ const fourArray = startArray.map(el=>el*2);
 
 console.log(fourArray);
 
+
+/*
+5) Сложить все четные элементы массива.
+*/
+
+const countElements = startArray.reduce((count, element)=>(element % 2) ? count + element : count);
+
+console.log(countElements);
+
