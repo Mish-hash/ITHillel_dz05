@@ -32,3 +32,12 @@ const searchElement = startArray.find( el=>el > 7 );
 
 console.log(searchElement ? searchElement : 'все элементы меньше 7и');
 
+
+/*
+4) Выведете массив. в котором каждый элемент умножен на 2. (ИСХОДНЫЙ МАССИВ ИПОЛЬЗУЕМ ИЗ ПУНКТА 1)
+*/
+
+const fourArray = startArray.map(el=>el*2);
+
+console.log(fourArray);
+
