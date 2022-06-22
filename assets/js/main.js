@@ -50,3 +50,17 @@ const countElements = startArray.reduce((count, element)=>(element % 2) ? count 
 
 console.log(countElements);
 
+
+/*
+6) ЗАДАЧА НА ПОИСКАТЬ. 
+Удалите из массива первый элемент и выведете резаультат, затем удалите последний элемент и выведите результат
+*/
+
+const sixArray = [...startArray];
+
+const firstElem = sixArray.shift();
+const lastElement = sixArray.pop();
+
+console.log(`удалён первый элемент массива со значением ${firstElem}`);
+console.log(`удалён последний элемент массива со значением ${lastElement}`);
+
