@@ -23,3 +23,12 @@ const twoArray = startArray.filter(el=>!(el % 3));
 
 console.log(twoArray);
 
+
+/*
+3) Выведите первый элемент, который больше 7, если такого нет, напишите что все элементы меньше 7и
+*/
+
+const searchElement = startArray.find( el=>el > 7 );
+
+console.log(searchElement ? searchElement : 'все элементы меньше 7и');
+
