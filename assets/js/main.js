@@ -52,7 +52,7 @@ console.log(countElements);
 
 
 /*
-6) ЗАДАЧА НА ПОИСКАТЬ. 
+6) ЗАДАЧА НА ПОИСКАТЬ.
 Удалите из массива первый элемент и выведете резаультат, затем удалите последний элемент и выведите результат
 */
 
@@ -63,4 +63,26 @@ const lastElement = sixArray.pop();
 
 console.log(`удалён первый элемент массива со значением ${firstElem}`);
 console.log(`удалён последний элемент массива со значением ${lastElement}`);
+
+
+/*
+ДАНО:
+
+const arrayOne = ['dog', 'cat', 'bird', 'rabbit', 'horse'];
+
+const arrayTwo = ['apple', 'car', 'cat', 'ball', 'horse'];
+
+Определить какие элементы массива arrayTwo есть в arrayOne.
+
+вывести массив с этими элеентами
+*/
+
+const arrayOne = ['dog', 'cat', 'bird', 'rabbit', 'horse'];
+const arrayTwo = ['apple', 'car', 'cat', 'ball', 'horse'];
+
+const diffArray = [];
+
+arrayTwo.forEach(el => arrayOne.includes(el) ? diffArray.push(el) : null);
+
+console.log(diffArray);
 
